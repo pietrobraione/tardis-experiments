@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import common.Settings;
 import tardis.Main;
-import tardis.implementation.Options;
+import tardis.Options;
 
 public class RunTestgen {
 	public static void main(String[] s) throws IOException {
