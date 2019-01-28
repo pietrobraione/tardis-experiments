@@ -4,7 +4,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="tardis-src"/>
 	<classpathentry kind="src" path="tardis-test"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/tardis"/>
 	<classpathentry kind="lib" path="/tardis/lib/evosuite-shaded-1.0.6-SNAPSHOT.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/tardis-master"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

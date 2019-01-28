@@ -1,13 +1,13 @@
 package symbols;
 
-import static tardis.implementation.Options.sig;
+import static tardis.Options.sig;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import common.Settings;
 import tardis.Main;
-import tardis.implementation.Options;
+import tardis.Options;
 
 public class RunSymbols {
 	public static void main(String[] s) throws IOException {

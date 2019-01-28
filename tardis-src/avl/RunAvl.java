@@ -5,11 +5,11 @@ import java.util.concurrent.TimeUnit;
 
 import common.Settings;
 import tardis.Main;
-import tardis.implementation.Options;
+import tardis.Options;
 
 public class RunAvl {
 	public static void main(String[] s) throws IOException {
-		final String targetClass = "avlTest/AvlTree";
+		final String targetClass = "avl/AvlTree";
 		final String targetMethodDescriptor = "(I)I";
 		final String targetMethodName  = "find";
 		final String initialTestClass = "avlTest/AvlTest";
