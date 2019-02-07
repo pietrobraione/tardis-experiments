@@ -5,20 +5,20 @@ import java.util.LinkedList;
 public class Symbols {
 	public String m(String s, double b1) {
 		if (b1 >= 0.0) {
-			return "ciao";
+			return "foo";
 		}
-		if (s.equals("prova")) {
-			return "prova";
+		if (s.equals("baz")) {
+			return "baz";
 		}
 		return null;
 	}
 
 	public String m(LinkedList<String> l, double b1) {
 		if (b1 >= 0.0) {
-			return "ciao";
+			return "foo";
 		}
-		if (l.toString().equals("prova")) {
-			return "prova";
+		if (l.toString().equals("baz")) {
+			return "baz";
 		}
 		return null;
 	}
