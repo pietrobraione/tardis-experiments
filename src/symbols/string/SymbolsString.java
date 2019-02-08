@@ -1,6 +1,15 @@
 package symbols.string;
 
-public class StringDemo {
+/**
+ * This example demonstrate the ability of TARDIS with
+ * reasoning on path conditions with clauses with 
+ * symbolic function invocations, specifically with
+ * Strings (methods toString and equals).
+ * 
+ * @author Giovanni Denaro
+ *
+ */
+public class SymbolsString {
 
     public static class C1 {
         private final int n;
@@ -45,4 +54,6 @@ public class StringDemo {
             return 0;
         }
     }
+    //this should generate at least four tests: two that raise NPE (o1 == null and o2 == null),
+    //one that returns 1, and one that returns 0. The overall coverage should be 2 branches.
 }

@@ -11,8 +11,8 @@ import tardis.Options;
 
 public class RunSymbolsString {
 	public static void main(String[] s) throws IOException {
-		final String targetClass = "symbols/string/StringDemo";
-		final String targetMethodDescriptor = "(Lsymbols/string/StringDemo$C1;Lsymbols/string/StringDemo$C2;)I";
+		final String targetClass = "symbols/string/SymbolsString";
+		final String targetMethodDescriptor = "(Lsymbols/string/SymbolsString$C1;Lsymbols/string/SymbolsString$C2;)I";
 		final String targetMethodName  = "entryPoint";
 		final int maxDepth = 50;
 		final int numOfThreads = 5;
@@ -35,8 +35,8 @@ public class RunSymbolsString {
 		o.setGlobalTimeBudgetDuration(timeBudgetDuration);
 		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);
 		o.setUninterpreted(
-			sig("symbols/string/StringDemo$C1", "()Ljava/lang/String;", "toString"),
-			sig("symbols/string/StringDemo$C2", "()Ljava/lang/String;", "toString"),
+			sig("symbols/string/SymbolsString$C1", "()Ljava/lang/String;", "toString"),
+			sig("symbols/string/SymbolsString$C2", "()Ljava/lang/String;", "toString"),
 			sig("java/lang/String", "(Ljava/lang/Object;)Z", "equals")
 		);
 	
