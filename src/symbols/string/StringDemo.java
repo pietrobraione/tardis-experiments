@@ -13,12 +13,11 @@ public class StringDemo {
         
         @Override
         public String toString() {
-        	return "C1(" + this.n +", '" + this.c + "')";
-            /*String s = "";
+            String s = "";
             for (int i = 0; i < n; i++) {
                 s += c;
             }
-            return s;*/
+            return s;
         }
     }
 
@@ -33,8 +32,7 @@ public class StringDemo {
         
         @Override
         public String toString() {
-        	return "C2(\"" + this.s +"\", \"" + this.c + "\")";
-            //return c + s;
+            return c + s;
         }
     }
 
