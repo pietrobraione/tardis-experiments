@@ -22,9 +22,11 @@ public class RunArray {
 		
 		final Options o = new Options();
 		o.setTargetMethod(targetClass, targetMethodDescriptor, targetMethodName);
-		//o.setInitialTestCase(initialTestClass, initialTestMethodDescriptor, initialTestMethodName);
+		o.setInitialTestCase(initialTestClass, initialTestMethodDescriptor, initialTestMethodName);
+		o.setInitialTestCasePath(Settings.EXAMPLES_PATH);
 		o.setMaxDepth(maxDepth);
-		o.setNumOfThreads(numOfThreads);
+		o.setNumOfThreadsJBSE(numOfThreads);
+                o.setNumOfThreadsEvosuite(numOfThreads);
 		o.setTmpDirectoryBase(Settings.TMP_BASE_PATH);
 		o.setZ3Path(Settings.Z3_PATH);
 		o.setJBSELibraryPath(Settings.JBSE_PATH);
