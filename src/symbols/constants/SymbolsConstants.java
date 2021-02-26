@@ -23,9 +23,9 @@ public class SymbolsConstants {
 		}
 		return null;
 	}
-	//expected result: four tests, one that returns "foo", one that returns "baz", 
-	//one that returns null, and one raising NPE (because s == null). The overall
-	//coverage should be 4 branches.
+        //expected result: three tests, one that returns "foo", one that returns "baz", and one
+        //that returns null. It should generate but not emit one test raising NPE 
+        //because s == null. The overall branch coverage should be 5 (4 branches plus method entry point).
 
 	/**
 	 * This is less easy.
@@ -39,7 +39,7 @@ public class SymbolsConstants {
 		}
 		return null;
 	}
-	//expected result: four tests, one that returns "foo", one that returns "baz", 
-	//one that returns null, and one raising NPE (because l == null). The overall
-	//coverage should be 4 branches.
+	//expected result: three tests, one that returns "foo", one that returns "baz", and one
+	//that returns null. It should generate but not emit one test raising NPE 
+	//because l == null. The overall branch coverage should be 5 (4 branches plus method entry point).
 }

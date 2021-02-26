@@ -28,13 +28,13 @@ public class RunArray {
 		o.setNumOfThreadsJBSE(numOfThreads);
                 o.setNumOfThreadsEvosuite(numOfThreads);
 		o.setTmpDirectoryBase(Settings.TMP_BASE_PATH);
+                o.setJava8Home(Settings.JAVA8_HOME);
 		o.setZ3Path(Settings.Z3_PATH);
 		o.setJBSELibraryPath(Settings.JBSE_PATH);
 		o.setClassesPath(Settings.BIN_PATH);
 		o.setOutDirectory(Settings.OUT_PATH);
 		o.setSushiLibPath(Settings.SUSHI_LIB_PATH);
-		o.setEvosuitePath(Settings.EVOSUITE_MOSA_PATH);
-		o.setUseMOSA(true);
+		o.setEvosuitePath(Settings.EVOSUITE_PATH);
 		o.setNumMOSATargets(5);
 		o.setGlobalTimeBudgetDuration(timeBudgetDuration);
 		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);

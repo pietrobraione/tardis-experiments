@@ -54,6 +54,8 @@ public class SymbolsString {
             return 0;
         }
     }
-    //this should generate at least four tests: two that raise NPE (o1 == null and o2 == null),
-    //one that returns 1, and one that returns 0. The overall coverage should be 2 branches.
+    //this should generate two tests, one that returns 1, and one that returns 0. 
+    //The overall coverage should be 3 (the two branches plus the entry point of 
+    //the method). It should also generate (but not emit in the output) one test 
+    //that raises NPE for o1 == null and one test that raises NPE for o2 == null. 
 }
