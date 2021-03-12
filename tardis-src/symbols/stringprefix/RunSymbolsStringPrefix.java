@@ -1,6 +1,4 @@
-package symbols.constants;
-
-import static tardis.Options.sig;
+package symbols.stringprefix;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -9,11 +7,10 @@ import common.Settings;
 import tardis.Main;
 import tardis.Options;
 
-public class RunSymbolsConstants {
+public class RunSymbolsStringPrefix {
 	public static void main(String[] s) throws IOException {
-		final String targetClass = "symbols/constants/SymbolsConstants";
-		final String targetMethodDescriptor = "(Ljava/lang/String;D)Ljava/lang/String;";
-		//final String targetMethodDescriptor = "(Ljava/util/LinkedList;D)Ljava/lang/String;";
+		final String targetClass = "symbols/stringprefix/SymbolsStringPrefix";
+		final String targetMethodDescriptor = "(Ljava/lang/String;)I";
 		final String targetMethodName  = "entryPoint";
 		final int maxDepth = 50;
 		final int numOfThreads = 5;
@@ -22,6 +19,7 @@ public class RunSymbolsConstants {
 		
 		final Options o = new Options();
 		o.setTargetMethod(targetClass, targetMethodDescriptor, targetMethodName);
+                o.setInitialTestCasePath(Settings.EXAMPLES_PATH);
 		o.setMaxDepth(maxDepth);
 		o.setNumOfThreadsJBSE(numOfThreads);
                 o.setNumOfThreadsEvosuite(numOfThreads);
@@ -36,9 +34,6 @@ public class RunSymbolsConstants {
 		o.setNumMOSATargets(5);
 		o.setGlobalTimeBudgetDuration(timeBudgetDuration);
 		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);
-		o.setUninterpreted(
-			sig("java/util/AbstractCollection", "()Ljava/lang/String;", "toString")
-		);
 	
 		final Main m = new Main(o);
 		m.start();

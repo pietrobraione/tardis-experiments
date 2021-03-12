@@ -42,8 +42,7 @@ public class RunSymbolsString {
 		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);
 		o.setUninterpreted(
 			sig("symbols/string/SymbolsString$C1", "()Ljava/lang/String;", "toString"),
-			sig("symbols/string/SymbolsString$C2", "()Ljava/lang/String;", "toString"),
-			sig("java/lang/String", "(Ljava/lang/Object;)Z", "equals")
+			sig("symbols/string/SymbolsString$C2", "()Ljava/lang/String;", "toString")
 		);
 	
 		final Main m = new Main(o);
