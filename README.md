@@ -10,8 +10,8 @@ This repository contains an Eclipse project that is configured to work together 
 
 ## Fixing the paths
 
-Before launching the experiments you must set a few configuration variables to reflect the paths where you installed the code. Under the `tardis-src` source folder you find the class `common.Settings`. Open it and edit the definitions of the `TARDIS_WORKSPACE`, `EXPERIMENTS_WORKSPACE`. and `Z3_PATH` variables to reflect the paths on your system where the tardis project, the tardis-experiment project, and the binary of the Z3 SMT solver are installed.
+Before launching the experiments you must set a few configuration variables to reflect the paths where you installed the code. Under the `tardis-src` source folder you find the class `common.Settings`. Open it and edit the definitions of the `TARDIS_WORKSPACE`, `EXPERIMENTS_WORKSPACE`. `Z3_PATH`, and `JAVA8_HOME` variables to reflect the paths on your system where the tardis project, the tardis-experiment project, the binary of the Z3 SMT solver, and the home of a Java 8 JDK are installed.
 
 ## Launching the experiments
 
-The `tardis-src` source directory contains the launch classes for the experiments. They all have name `Run<experiment name>.java`. Just run them.
+The `tardis-src` source directory contains the launcher and the configurator classes for the experiments. The formers all have name `Run<experiment name>.java`: Just run them. The latters all have name `<experiment name>Configurator.java`
