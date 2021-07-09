@@ -18,31 +18,31 @@ public class RunTestgen {
 		final int maxDepth = 50;
 		final int numOfThreads = 5;
 		final int numOfMOSATargets = 5;
-                final float throttleFactorEvosuite = 1.0f;
+		final float throttleFactorEvosuite = 1.0f;
 		final long timeBudgetDuration = 10;
 		final TimeUnit timeBudgetTimeUnit = TimeUnit.MINUTES;
-		
+
 		final Options o = new Options();
-                o.setTargetClass(targetClass);
+		o.setTargetClass(targetClass);
 		o.setTargetMethod(targetClass, targetMethodDescriptor, targetMethodName);
 		o.setInitialTestCase(initialTestClass, initialTestMethodDescriptor, initialTestMethodName);
 		o.setInitialTestCasePath(Settings.EXAMPLES_PATH);
 		o.setMaxDepth(maxDepth);
 		o.setNumOfThreadsJBSE(numOfThreads);
-                o.setNumOfThreadsEvosuite(numOfThreads);
-                o.setNumMOSATargets(numOfMOSATargets);
-                o.setThrottleFactorEvosuite(throttleFactorEvosuite);
-                o.setGlobalTimeBudgetDuration(timeBudgetDuration);
-                o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);
+		o.setNumOfThreadsEvosuite(numOfThreads);
+		o.setNumMOSATargets(numOfMOSATargets);
+		o.setThrottleFactorEvosuite(throttleFactorEvosuite);
+		o.setGlobalTimeBudgetDuration(timeBudgetDuration);
+		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);
 		o.setTmpDirectoryBase(Settings.TMP_BASE_PATH);
-                o.setJava8Home(Settings.JAVA8_HOME);
+		o.setJava8Home(Settings.JAVA8_HOME);
 		o.setZ3Path(Settings.Z3_PATH);
 		o.setJBSELibraryPath(Settings.JBSE_PATH);
 		o.setClassesPath(Settings.BIN_PATH);
 		o.setOutDirectory(Settings.OUT_PATH);
 		o.setSushiLibPath(Settings.SUSHI_LIB_PATH);
 		o.setEvosuitePath(Settings.EVOSUITE_PATH);
-		
+
 		final Main m = new Main(o);
 		m.start();
 	}
