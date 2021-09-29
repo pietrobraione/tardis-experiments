@@ -6,6 +6,6 @@
 	<classpathentry kind="src" path="tardis-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/tardis-master"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/sushi-lib"/>
-	<classpathentry kind="lib" path="/tardis/libs/evosuite-shaded-1.0.6-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/tardis/libs/evosuite-shaded-1.1.1-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
