@@ -36,7 +36,7 @@ public final class SymbolsStringConfigurator implements OptionsConfigurator {
 		o.setOutDirectory(Settings.OUT_PATH);
 		o.setSushiLibPath(Settings.SUSHI_LIB_PATH);
 		o.setEvosuitePath(Settings.EVOSUITE_PATH);
-		o.setNumMOSATargets(5);
+		o.setNumTargetsEvosuiteJob(5);
 		o.setGlobalTimeBudgetDuration(timeBudgetDuration);
 		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);
 		o.setUninterpreted(
