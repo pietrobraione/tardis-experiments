@@ -17,20 +17,19 @@ public final class TestgenConfigurator implements OptionsConfigurator {
 		final String initialTestMethodName = "test1";
 		final int maxDepth = 50;
 		final int numOfThreads = 5;
-		final int numTargetsEvosuiteJob = 5;
+		final int numMOSATargets = 5;
 		final float throttleFactorEvosuite = 1.0f;
 		final long timeBudgetDuration = 10;
 		final TimeUnit timeBudgetTimeUnit = TimeUnit.MINUTES;
 
 		o.setTargetClass(targetClass);
-		//o.setTargetMethod(targetClass, targetMethodDescriptor, targetMethodName);
+		o.setTargetMethod(targetClass, targetMethodDescriptor, targetMethodName);
 		o.setInitialTestCase(initialTestClass, initialTestMethodDescriptor, initialTestMethodName);
 		o.setInitialTestCasePath(Settings.EXAMPLES_PATH);
 		o.setMaxDepth(maxDepth);
-		o.setEvosuiteMultiSearch(true);
-		o.setNumOfThreadsJBSE(10); //for Evosuite multisearch
-		o.setNumOfThreadsEvosuite(1); //for Evosuite multisearch
-		o.setNumTargetsEvosuiteJob(numTargetsEvosuiteJob);
+		o.setNumOfThreadsJBSE(numOfThreads);
+		o.setNumOfThreadsEvosuite(numOfThreads);
+		o.setNumMOSATargets(numMOSATargets);
 		o.setThrottleFactorEvosuite(throttleFactorEvosuite);
 		o.setGlobalTimeBudgetDuration(timeBudgetDuration);
 		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);

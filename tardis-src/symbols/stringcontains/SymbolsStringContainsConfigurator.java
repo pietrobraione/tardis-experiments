@@ -30,7 +30,7 @@ public final class SymbolsStringContainsConfigurator implements OptionsConfigura
 		o.setOutDirectory(Settings.OUT_PATH);
 		o.setSushiLibPath(Settings.SUSHI_LIB_PATH);
 		o.setEvosuitePath(Settings.EVOSUITE_PATH);
-		o.setNumTargetsEvosuiteJob(5);
+		o.setNumMOSATargets(5);
 		o.setGlobalTimeBudgetDuration(timeBudgetDuration);
 		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);
 	}
