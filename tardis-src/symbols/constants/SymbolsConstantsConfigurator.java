@@ -32,11 +32,9 @@ public final class SymbolsConstantsConfigurator implements OptionsConfigurator {
 		o.setOutDirectory(Settings.OUT_PATH);
 		o.setSushiLibPath(Settings.SUSHI_LIB_PATH);
 		o.setEvosuitePath(Settings.EVOSUITE_PATH);
-		o.setNumTargetsEvosuiteJob(5);
+		o.setNumTargetsEvosuitePerJob(5);
 		o.setGlobalTimeBudgetDuration(timeBudgetDuration);
 		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);
-		o.setUninterpreted(
-		                   sig("java/util/AbstractCollection", "()Ljava/lang/String;", "toString")
-		);
+		o.setUninterpreted(sig("java/util/AbstractCollection", "()Ljava/lang/String;", "toString"));
 	}
 }

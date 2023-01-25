@@ -45,7 +45,7 @@ public final class AvlConfigurator implements OptionsConfigurator {
 		o.setOutDirectory(Settings.OUT_PATH);
 		o.setEvosuitePath(Settings.EVOSUITE_PATH);
 		o.setSushiLibPath(Settings.SUSHI_LIB_PATH);
-		o.setNumTargetsEvosuiteJob(numTargetsEvosuiteJob);
+		o.setNumTargetsEvosuitePerJob(numTargetsEvosuiteJob);
 		o.setEvosuiteNoDependency(true);
 	}
 }

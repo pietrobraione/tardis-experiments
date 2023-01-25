@@ -30,7 +30,7 @@ public final class TestgenConfigurator implements OptionsConfigurator {
 		o.setEvosuiteMultiSearch(true);
 		o.setNumOfThreadsJBSE(10); //for Evosuite multisearch
 		o.setNumOfThreadsEvosuite(1); //for Evosuite multisearch
-		o.setNumTargetsEvosuiteJob(numTargetsEvosuiteJob);
+		o.setNumTargetsEvosuitePerJob(numTargetsEvosuiteJob);
 		o.setThrottleFactorEvosuite(throttleFactorEvosuite);
 		o.setGlobalTimeBudgetDuration(timeBudgetDuration);
 		o.setGlobalTimeBudgetUnit(timeBudgetTimeUnit);
