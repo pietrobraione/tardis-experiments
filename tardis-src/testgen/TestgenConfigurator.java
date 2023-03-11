@@ -28,6 +28,8 @@ public final class TestgenConfigurator implements OptionsConfigurator {
 		o.setInitialTestCasePath(Settings.EXAMPLES_PATH);
 		o.setMaxDepth(maxDepth);
 		o.setEvosuiteMultiSearch(true);
+		//o.setNumOfThreadsJBSE(numOfThreads);
+		//o.setNumOfThreadsEvosuite(numOfThreads);
 		o.setNumOfThreadsJBSE(10); //for Evosuite multisearch
 		o.setNumOfThreadsEvosuite(1); //for Evosuite multisearch
 		o.setNumTargetsEvosuitePerJob(numTargetsEvosuiteJob);
