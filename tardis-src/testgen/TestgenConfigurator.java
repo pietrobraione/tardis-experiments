@@ -23,7 +23,7 @@ public final class TestgenConfigurator implements OptionsConfigurator {
 		final TimeUnit timeBudgetTimeUnit = TimeUnit.MINUTES;
 
 		o.setTargetClass(targetClass);
-		//o.setTargetMethod(targetClass, targetMethodDescriptor, targetMethodName);
+		o.setTargetMethod(targetClass, targetMethodDescriptor, targetMethodName);
 		o.setInitialTestCase(initialTestClass, initialTestMethodDescriptor, initialTestMethodName);
 		o.setInitialTestCasePath(Settings.EXAMPLES_PATH);
 		o.setMaxDepth(maxDepth);

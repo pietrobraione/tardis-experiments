@@ -19,7 +19,7 @@ public final class Settings {
 	//these are good for everyone
 	public static final Path JBSE_PATH      = TARDIS_WORKSPACE.resolve(Paths.get("jbse", "build", "classes", "java", "main"));
 	public static final Path SUSHI_LIB_PATH = TARDIS_WORKSPACE.resolve(Paths.get("runtime", "build", "classes", "java", "main"));
-	public static final Path EVOSUITE_PATH  = TARDIS_WORKSPACE.resolve(Paths.get("libs", "evosuite-shaded-1.2.1-SNAPSHOT.jar"));
+	public static final Path EVOSUITE_PATH  = TARDIS_WORKSPACE.resolve(Paths.get("libs", "evosuite-shaded-1.1.1-SNAPSHOT.jar"));
 	public static final Path BIN_PATH       = EXPERIMENTS_WORKSPACE.resolve("bin");
 	public static final Path TMP_BASE_PATH  = EXPERIMENTS_WORKSPACE.resolve("tardis-out");
 	public static final Path OUT_PATH       = EXPERIMENTS_WORKSPACE.resolve("tardis-test");

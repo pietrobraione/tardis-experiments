@@ -17,9 +17,7 @@ public final class AvlConfigurator implements OptionsConfigurator {
 		//final String initialTestMethodDescriptor = "()V";
 		//final String initialTestMethodName = "testFind";
 		final int maxDepth = 50;
-		final int numOfThreads = 2;
-		final int numTargetsEvosuiteJob = 5;
-		final float throttleFactorEvosuite = 1.0f;
+		final int numOfThreads = 5;
 		final long globalTimeBudgetDuration = 30;
 		final TimeUnit globalTimeBudgetTimeUnit = TimeUnit.MINUTES;
 		
@@ -28,13 +26,9 @@ public final class AvlConfigurator implements OptionsConfigurator {
 		//o.setInitialTestCaseRandom(Randomness.SUITE);
 		//o.setInitialTestCasePath(Settings.EXAMPLES_PATH);
 		//o.setInitialTestCase(initialTestClass, initialTestMethodDescriptor, initialTestMethodName);
-		o.setEvosuiteMultiSearch(true);
 		o.setMaxDepth(maxDepth);
-		//o.setNumOfThreadsJBSE(numOfThreads);
-		//o.setNumOfThreadsEvosuite(numOfThreads);
-		o.setNumOfThreadsJBSE(10); //for Evosuite multisearch
-		o.setNumOfThreadsEvosuite(1); //for Evosuite multisearch
-		o.setThrottleFactorEvosuite(throttleFactorEvosuite);
+		o.setNumOfThreadsJBSE(numOfThreads);
+		o.setNumOfThreadsEvosuite(numOfThreads);
 		o.setGlobalTimeBudgetDuration(globalTimeBudgetDuration);
 		o.setGlobalTimeBudgetUnit(globalTimeBudgetTimeUnit);
 		o.setTmpDirectoryBase(Settings.TMP_BASE_PATH);
